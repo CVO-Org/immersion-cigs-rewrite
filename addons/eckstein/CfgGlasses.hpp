@@ -9,10 +9,10 @@ class CfgGlasses {
         author = CSTRING(author);
         mass = 0.02;
         displayName = CSTRING(cigarette);
-        descriptionShort = ECSTRING(core,face_stage0);
+        descriptionShort = ECSTRING(core,glasses_stage0);
 
-        model = PATH_TO_ADDON_3(data,cigs,cig0.p3d);
-        picture = PATH_TO_ADDON_3(data,ui,gear_cig0_x_ca.paa);
+        model = QPATHTOF(data\cigs\cig0.p3d);
+        picture = QPATHTOF(data\ui\gear_cig0_x_ca.paa);
         identityTypes[] = {};
 
         PVAR(maxTime) = MAXTIME;
@@ -29,10 +29,10 @@ class CfgGlasses {
         scope = _DEBUG_SCOPE_;
         author = CSTRING(author);
         displayName = CSTRING(cigarette);
-        descriptionShort = ECSTRING(core,face_stage1);
+        descriptionShort = ECSTRING(core,glasses_stage1);
 
-        model = PATH_TO_ADDON_3(data,cigs,cig1.p3d);
-        picture = PATH_TO_ADDON_3(data,ui,gear_cig1_x_ca.paa);
+        model = QPATHTOF(data\cigs\cig1.p3d);
+        picture = QPATHTOF(data\ui\gear_cig1_x_ca.paa);
 
         PVAR(initStateTime) = INITSTATETIME_VARIANT_1;
         PVAR(nextState) = QGVAR(cig2);
@@ -43,10 +43,10 @@ class CfgGlasses {
         scope = _DEBUG_SCOPE_;
         author = CSTRING(author);
         displayName = CSTRING(cigarette);
-        descriptionShort = ECSTRING(core,face_stage2);
+        descriptionShort = ECSTRING(core,glasses_stage2);
 
-        model = PATH_TO_ADDON_3(data,cigs,cig2.p3d);
-        picture = PATH_TO_ADDON_3(data,ui,gear_cig2_x_ca.paa);
+        model = QPATHTOF(data\cigs\cig2.p3d);
+        picture = QPATHTOF(data\ui\gear_cig2_x_ca.paa);
 
         PVAR(initStateTime) = INITSTATETIME_VARIANT_2;
         PVAR(nextState) = QGVAR(cig3);
@@ -57,10 +57,10 @@ class CfgGlasses {
         scope = _DEBUG_SCOPE_;
         author = CSTRING(author);
         displayName = CSTRING(cigarette);
-        descriptionShort = ECSTRING(core,face_stage3);
+        descriptionShort = ECSTRING(core,glasses_stage3);
 
-        model = PATH_TO_ADDON_3(data,cigs,cig3.p3d);
-        picture = PATH_TO_ADDON_3(data,ui,gear_cig3_x_ca.paa);
+        model = QPATHTOF(data\cigs\cig3.p3d);
+        picture = QPATHTOF(data\ui\gear_cig3_x_ca.paa);
 
         PVAR(initStateTime) = INITSTATETIME_VARIANT_3;
         PVAR(nextState) = QGVAR(cig4);
@@ -71,10 +71,10 @@ class CfgGlasses {
         scope = _DEBUG_SCOPE_;
         author = CSTRING(author);
         displayName = CSTRING(cigarette);
-        descriptionShort = ECSTRING(core,face_stage4);
+        descriptionShort = ECSTRING(core,glasses_stage4);
 
-        model = PATH_TO_ADDON_3(data,cigs,cig4.p3d);
-        picture = PATH_TO_ADDON_3(data,ui,gear_cig4_x_ca.paa);
+        model = QPATHTOF(data\cigs\cig4.p3d);
+        picture = QPATHTOF(data\ui\gear_cig4_x_ca.paa);
 
         PVAR(initStateTime) = INITSTATETIME_VARIANT_4;
         PVAR(nextState) = "";

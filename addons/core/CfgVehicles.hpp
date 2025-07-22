@@ -12,6 +12,9 @@ class CfgVehicles
         author = CSTRING(author);
         vehicleClass = "Magazines";
 
+        editorCategory = QPVAR(category_main);
+        editorSubcategory = QPVAR(subcategory_lighters);
+
         class TransportMagazines {
             class PVAR(matches) {
                 magazine = QPVAR(matches);
@@ -20,12 +23,9 @@ class CfgVehicles
         };
     };
 
-    class PVAR(lighterItem): WeaponHolder_Single_limited_item_F {
-        scope = 2;
-        scopeCurator = 2;
+    class PVAR(lighterItem): PVAR(matchesItem) {
         displayName = CSTRING(lighter);
         author = CSTRING(author);
-        vehicleClass = "Magazines";
 
         class TransportMagazines {
             class PVAR(lighter) {

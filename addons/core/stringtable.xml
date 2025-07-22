@@ -138,25 +138,39 @@
             <German>Einzelspieler</German>
         </Key>
     </Package>
+    <Package name="EditorCategories">
+        <Key ID="STR_cigs_core_editor_category_main">
+            <English>Immersion Cigs</English>
+            <German>Immersive Zigaretten</German>
+        </Key>
+        <Key ID="STR_cigs_core_editor_subCategory_cigpacks">
+            <English>Cig Packs</English>
+            <German>Schachteln</German>
+        </Key>
+        <Key ID="STR_cigs_core_editor_subCategory_lighters">
+            <English>Lighters</English>
+            <German>Feuerzeuge</German>
+        </Key>
+    </Package>
     <Package name="GlobalDescription">
-        <Key ID="STR_cigs_core_face_stage0">
-            <English>Facewear Slot - Stage 0</English>
+        <Key ID="STR_cigs_core_glasses_stage0">
+            <English>Glasses Slot - Stage 0</English>
             <French>Masques - Stage 0</French>
         </Key>
-        <Key ID="STR_cigs_core_face_stage1">
-            <English>Facewear Slot - Stage 1</English>
+        <Key ID="STR_cigs_core_glasses_stage1">
+            <English>Glasses Slot - Stage 1</English>
             <French>Masques - Stage 1</French>
         </Key>
-        <Key ID="STR_cigs_core_face_stage2">
-            <English>Facewear Slot - Stage 2</English>
+        <Key ID="STR_cigs_core_glasses_stage2">
+            <English>Glasses Slot - Stage 2</English>
             <French>Masques - Stage 2</French>
         </Key>
-        <Key ID="STR_cigs_core_face_stage3">
-            <English>Facewear Slot - Stage 3</English>
+        <Key ID="STR_cigs_core_glasses_stage3">
+            <English>Glasses Slot - Stage 3</English>
             <French>Masques - Stage 3</French>
         </Key>
-        <Key ID="STR_cigs_core_face_stage4">
-            <English>Facewear Slot - Stage 4</English>
+        <Key ID="STR_cigs_core_glasses_stage4">
+            <English>Glasses Slot - Stage 4</English>
             <French>Masques - Stage 4</French>
         </Key>
         <Key ID="STR_cigs_core_hmd_stage0">

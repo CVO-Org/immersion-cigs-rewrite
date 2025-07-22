@@ -12,7 +12,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-    texture = "z\cigs\addons\lucky_strike\data\cigs\cigs_nohq.paa";
+    texture = "z\cigs\addons\lucky_strike\data\cigs\texture_nohq.paa";
     uvSource = "tex";
     class uvTransform
     {
@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-    texture = "z\cigs\addons\lucky_strike\data\cigs\cigs_smdi.paa";
+    texture = "z\cigs\addons\lucky_strike\data\cigs\texture_smdi.paa";
     uvSource = "tex";
     class uvTransform
     {

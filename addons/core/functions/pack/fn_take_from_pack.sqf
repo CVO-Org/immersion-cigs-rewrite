@@ -22,11 +22,11 @@ params [
 
 [_player, _class_cigpack] call FUNC(removeItemFromMag);
 
-private _sound = [ configFile >> "CfgMagazines" >> _class_cigpack >> QPVAR(unpackSound) ] call FUNC(getCfgDataRandom);
+private _sound = [ configFile >> "CfgMagazines" >> _class_cigpack >> QPVAR(unpackSound) ] call CBA_fnc_getCfgDataRandom;
 if (_sound != "") then { [_unit, _sound, nil, true, true, true] call CBA_fnc_globalSay3D; };
 
-private _item_glasses = [(configFile >> "CfgMagazines" >> _class_cigpack >> QPVAR(item_glasses))] call FUNC(getCfgDataRandom);
-private _item_hmd =     [(configFile >> "CfgMagazines" >> _class_cigpack >> QPVAR(item_hmd)    )] call FUNC(getCfgDataRandom);
+private _item_glasses = [(configFile >> "CfgMagazines" >> _class_cigpack >> QPVAR(item_glasses))] call CBA_fnc_getCfgDataRandom;
+private _item_hmd =     [(configFile >> "CfgMagazines" >> _class_cigpack >> QPVAR(item_hmd)    )] call CBA_fnc_getCfgDataRandom;
 
 switch (true) do {
     case (goggles _player == ""): { _player addGoggles _item_glasses };

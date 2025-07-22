@@ -225,7 +225,7 @@ class CfgGesturesMale
 	        speed=-4.5;
 			looped=0;
 			mask="handsWeapon_context";
-			file=PATH_TO_ADDON_2(data,cig_in.rtm);      //"\immersion_cigs_animations\cig_in.rtm"
+			file=QPATHTOF(data\cig_in.rtm);      //"\immersion_cigs_animations\cig_in.rtm"
 			leftHandIKBeg=0;
 			leftHandIKCurve[]={0};
 			leftHandIKEnd=0;
@@ -238,7 +238,7 @@ class CfgGesturesMale
 	        speed=-1.9;
 			looped=0;
 			mask="handsWeapon_context";
-			file=PATH_TO_ADDON_2(data,cig_out.rtm);      //"\immersion_cigs_animations\cig_out.rtm";
+			file=QPATHTOF(data\cig_out.rtm);      //"\immersion_cigs_animations\cig_out.rtm";
 			leftHandIKBeg=0;
 			leftHandIKCurve[]={0};
 			leftHandIKEnd=0;
@@ -251,7 +251,7 @@ class CfgGesturesMale
 	        speed=-6.5;
 			looped=1;
 			mask="am_leftHalfBody";
-			file=PATH_TO_ADDON_2(data,cig_loop.rtm);      //"\immersion_cigs_animations\cig_loop.rtm";
+			file=QPATHTOF(data\cig_loop.rtm);      //"\immersion_cigs_animations\cig_loop.rtm";
 			leftHandIKBeg=0;
 			leftHandIKCurve[]={0};
 			leftHandIKEnd=0;

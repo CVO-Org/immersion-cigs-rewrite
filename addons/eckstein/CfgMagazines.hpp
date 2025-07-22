@@ -7,8 +7,8 @@ class CfgMagazines {
 
         displayName = CSTRING(cigpack);
         descriptionShort = CSTRING(cigpack_desc);
-        model = PATH_TO_ADDON_3(data,cigpack,cigpack.p3d);
-        picture = PATH_TO_ADDON_3(data,ui,gear_cigpack_x_ca.paa);
+        model = QPATHTOF(data\cigpack\cigpack.p3d);
+        picture = QPATHTOF(data\ui\gear_cigpack_x_ca.paa);
 
         ammo = "";
         count = 20;

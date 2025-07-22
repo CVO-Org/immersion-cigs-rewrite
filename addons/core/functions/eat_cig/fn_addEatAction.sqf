@@ -21,7 +21,7 @@
     ,["GOGGLES", "HMD"]         // Slots - STRING or ARRAY of Strings
     ,[LLSTRING(eat_cig), LLSTRING(eat_cig_desc)]    // Display Name - STRING or ARRAY of Strings - [displayName, Tooltip]
     ,[]                         // Text Color
-    ,PATH_TO_ADDON_3(data,ui,eat_cig.paa)                        // Icon path
+    ,QPATHTOF(data\ui\eat_cig.paa)                        // Icon path
     ,[                          // condition - CODE or ARRAY of Code [_conditionEnable, _conditionShow] - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];
         {
             params ["_unit", "_container", "_item", "_slot", "_params"];

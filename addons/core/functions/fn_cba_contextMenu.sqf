@@ -22,7 +22,7 @@
     ,["CONTAINER"]                              // Slots - STRING or ARRAY of Strings
     ,LLSTRING(take_from_pack)                   // Display Name - STRING or ARRAY of Strings - [displayName, Tooltip]
     ,[]                                         // Text Color
-    ,PATH_TO_ADDON_3(data,ui,take_cig.paa)      // Icon path
+    ,QPATHTOF(data\ui\take_cig.paa)             // Icon path
     ,[                                          // condition - CODE or ARRAY of Code [_conditionEnable, _conditionShow] - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];
         {
             params ["_unit", "_container", "_item", "_slot", "_params"];
@@ -47,7 +47,7 @@
     ,["GOGGLES", "HMD"]         // Slots - STRING or ARRAY of Strings
     ,[LLSTRING(start_cig_own), LLSTRING(start_cig_own_desc)]    // Display Name - STRING or ARRAY of Strings - [displayName, Tooltip]
     ,[]                         // Text Color
-    ,PATH_TO_ADDON_3(data,ui,light_cig.paa)                        // Icon path
+    ,QPATHTOF(data\ui\light_cig.paa)                // Icon path
     ,[                          // condition - CODE or ARRAY of Code [_conditionEnable, _conditionShow] - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];
         {
             params ["_unit", "_container", "_item", "_slot", "_params"];
@@ -78,7 +78,7 @@
     ,["GOGGLES", "HMD"]         // Slots - STRING or ARRAY of Strings
     ,LLSTRING(stop_cig)    // Display Name - STRING or ARRAY of Strings - [displayName, Tooltip]
     ,[]                         // Text Color
-    ,PATH_TO_ADDON_3(data,ui,light_cig.paa)                        // Icon path
+    ,QPATHTOF(data\ui\light_cig.paa)                // Icon path
     ,[                          // condition - CODE or ARRAY of Code [_conditionEnable, _conditionShow] - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];
         {
             params ["_unit", "_container", "_item", "_slot", "_params"];
@@ -111,7 +111,7 @@
     ,["GOGGLES", "HMD"]         // Slots - STRING or ARRAY of Strings
     ,[LLSTRING(start_sucking), "Requires a Lighter or Matches in your inventory"]    // Display Name - STRING or ARRAY of Strings - [displayName, Tooltip]
     ,[]                         // Text Color
-    ,PATH_TO_ADDON_3(data,ui,pop_consume.paa)                        // Icon path
+    ,QPATHTOF(data\ui\pop_consume.paa)                // Icon path
     ,[                          // condition - CODE or ARRAY of Code [_conditionEnable, _conditionShow] - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];
         {
             params ["_unit", "_container", "_item", "_slot", "_params"];
@@ -143,7 +143,7 @@
     ,["GOGGLES", "HMD"]         // Slots - STRING or ARRAY of Strings
     ,LLSTRING(stop_sucking)    // Display Name - STRING or ARRAY of Strings - [displayName, Tooltip]
     ,[]                         // Text Color
-    ,PATH_TO_ADDON_3(data,ui,pop_consume.paa)                        // Icon path
+    ,QPATHTOF(data\ui\pop_consume.paa)                // Icon path
     ,[                          // condition - CODE or ARRAY of Code [_conditionEnable, _conditionShow] - Arguments: params ["_unit", "_container", "_item", "_slot", "_params"];
         {
             params ["_unit", "_container", "_item", "_slot", "_params"];

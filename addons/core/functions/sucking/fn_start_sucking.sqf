@@ -67,14 +67,14 @@ if (_maxTime == 0) then { _maxTime = 330; };
 ////////////////////////////////////////
 // Initial Sucking Sound
 ////////////////////////////////////////
-private _sound = [(_suckerConfig >> QPVAR(sounds))] call FUNC(getCfgDataRandom);
+private _sound = [(_suckerConfig >> QPVAR(sounds))] call CBA_fnc_getCfgDataRandom;
 [_unit, _sound, nil, true, true, true] call CBA_fnc_globalSay3D;
 
 
 ////////////////////////////////////////
 // Flavour Notification
 ////////////////////////////////////////
-private _flavour = [(_suckerConfig >> QPVAR(flavour))] call FUNC(getCfgDataRandom);
+private _flavour = [(_suckerConfig >> QPVAR(flavour))] call CBA_fnc_getCfgDataRandom;
 [ { [QGVAR(EH_notify), format [LLSTRING(taste_flavour), _this]] call CBA_fnc_localEvent; } , _flavour, 2 + random 30] call CBA_fnc_waitAndExecute;
 
 

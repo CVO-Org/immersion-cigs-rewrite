@@ -18,7 +18,7 @@ class CfgPatches {
 
         // Required addons, used for setting load order.
         // When any of the addons is missing, pop-up warning will appear when launching the game.
-        requiredAddons[] = {QPVAR(main),"cba_common"};
+        requiredAddons[] = {"cba_common", "cigs_main", "cigs_pops"};
 
 		// Optional. If this is 1, if any of requiredAddons[] entry is missing in your game the entire config will be ignored and return no error (but in rpt) so useful to make a compat Mod (Since Arma 3 2.14)
 		skipWhenMissingDependencies = 1;
@@ -32,8 +32,7 @@ class CfgPatches {
 	};
 };
 
-#include "CfgVehicles.hpp"
-#include "CfgMagazines.hpp"
+#include "poppack.hpp"
 
-#include "CfgGlasses.hpp"
-#include "CfgWeapons.hpp"
+#include "pops_glasses.hpp"
+#include "pops_hmd.hpp"

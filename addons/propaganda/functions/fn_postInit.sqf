@@ -37,22 +37,22 @@ if (
         "cvo_stencil_black",
         "Voron",
         "Ace_SpraypaintBlack",
-        [PATH_TO_ADDON_2(data,cvo_stencil_black_ca.paa)],
-        PATH_TO_ADDON_2(data,cvo_stencil_black_ca.paa)
+        [QPATHTOF(data\cvo_stencil_black_ca.paa)],
+        QPATHTOF(data\cvo_stencil_black_ca.paa)
     ] call ace_tagging_fnc_addCustomTag;
     [
         "cvo_stencil_white",
         "Voron",
         "Ace_SpraypaintWhite",
-        [PATH_TO_ADDON_2(data,cvo_stencil_white_ca.paa)],
-        PATH_TO_ADDON_2(data,cvo_stencil_white_ca.paa)
+        [QPATHTOF(data\cvo_stencil_white_ca.paa)],
+        QPATHTOF(data\cvo_stencil_white_ca.paa)
     ] call ace_tagging_fnc_addCustomTag;
     [
         "cvo_stencil_red",
         "Voron",
         "Ace_SpraypaintRed",
-        [PATH_TO_ADDON_2(data,cvo_stencil_red_ca.paa)],
-        PATH_TO_ADDON_2(data,cvo_stencil_red_ca.paa)
+        [QPATHTOF(data\cvo_stencil_red_ca.paa)],
+        QPATHTOF(data\cvo_stencil_red_ca.paa)
     ] call ace_tagging_fnc_addCustomTag;
 
     [ CBA_fnc_addItem , [player, "Ace_SpraypaintBlack"], 15 ] call CBA_fnc_waitAndExecute;

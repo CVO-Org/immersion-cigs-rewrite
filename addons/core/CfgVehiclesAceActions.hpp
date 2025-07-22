@@ -9,10 +9,10 @@ class CAManBase: Man
             {
                 displayName = CSTRING(start_cig_their);
                 condition = Q([_player] call FUNC(hasLighter) && [_target] call FUNC(canStartSmoking));
-                statement = Q(_this call FUNC(start_cig_their));
+                statement = Q(call FUNC(start_cig_their));
                 showDisabled = 0;
                 exceptions[] = {"isNotInside", "isNotSitting"};
-                icon = PATH_TO_ADDON_3(data,ui,light_cig.paa);
+                icon = QPATHTOF(data\ui\light_cig.paa);
             };        
         };
     };
@@ -29,7 +29,7 @@ class CAManBase: Man
                 insertChildren = Q([_player] call FUNC(action_pack_children));
                 showDisabled = 0;
                 exceptions[] = {"isNotInside", "isNotSitting"};
-                icon = PATH_TO_ADDON_3(data,ui,take_cig.paa);
+                icon = QPATHTOF(data\ui\take_cig.paa);
             };
 
             // Smokable Actions
@@ -40,7 +40,7 @@ class CAManBase: Man
                 statement = Q([_player] call FUNC(start_cig_your));
                 showDisabled = 0;
                 exceptions[] = {"isNotInside", "isNotSitting"};
-                icon = PATH_TO_ADDON_3(data,ui,light_cig.paa);
+                icon = QPATHTOF(data\ui\light_cig.paa);
             };
             class PVAR(stop_cig)
             {
@@ -49,7 +49,7 @@ class CAManBase: Man
                 statement = Q([_player] call FUNC(stop_cig));
                 showDisabled = 0;
                 exceptions[] = {"isNotInside", "isNotSitting"};
-                icon = PATH_TO_ADDON_3(data,ui,light_cig.paa);
+                icon = QPATHTOF(data\ui\light_cig.paa);
             };
 
             // Suckable Actions
@@ -60,7 +60,7 @@ class CAManBase: Man
                 statement = Q([_player] call FUNC(start_suck_self));
                 showDisabled = 0;
                 exceptions[] = {"isNotInside", "isNotSitting"};
-                icon = PATH_TO_ADDON_3(data,ui,pop_consume.paa);
+                icon = QPATHTOF(data\ui\pop_consume.paa);
             };
             class PVAR(stop_suck)
             {
@@ -69,7 +69,7 @@ class CAManBase: Man
                 statement = Q([_player] call FUNC(stop_sucking));
                 showDisabled = 0;
                 exceptions[] = {"isNotInside", "isNotSitting"};
-                icon = PATH_TO_ADDON_3(data,ui,pop_consume.paa);
+                icon = QPATHTOF(data\ui\pop_consume.paa);
             };
         };
     };

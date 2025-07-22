@@ -37,7 +37,7 @@ switch (_itemType) do {
 ////////////////////////////////////////
 // Sound Effects
 ////////////////////////////////////////
-private _sound = [(_itemConfig >> PVAR(sounds))] call FUNC(getCfgDataRandom);
+private _sound = [(_itemConfig >> PVAR(sounds))] call CBA_fnc_getCfgDataRandom;
 [_unit, _sound, nil, true, true, true] call CBA_fnc_globalSay3D;
 
 

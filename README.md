@@ -37,6 +37,7 @@ We do not encourage anyone to smoke in real life, we don't smoke irl, it's just 
 ### Compats for
 - SOG: Prarie Fire
 - [KJW's Imposter](https://steamcommunity.com/sharedfiles/filedetails/?id=2917554904)
+- [Helmet on Ass - Helmet Slinging](https://steamcommunity.com/sharedfiles/filedetails/?id=3487820370)
 
 ### For Server Admins
 - This mod has to be loaded on both, Server and Client.

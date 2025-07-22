@@ -17,8 +17,8 @@ class CfgWeapons {
         displayName = CSTRING(cigarette);
         descriptionShort = ECSTRING(core,hmd_stage0);
 
-        model = PATH_TO_ADDON_3(data,cigs,cig0.p3d);
-        picture = PATH_TO_ADDON_3(data,ui,gear_cig0_x_ca.paa);
+        model = QPATHTOF(data\cigs\cig0.p3d);
+        picture = QPATHTOF(data\ui\gear_cig0_x_ca.paa);
 
         PVAR(maxTime) = MAXTIME;
         PVAR(initStateTime) = INITSTATETIME_VARIANT_0;
@@ -31,8 +31,8 @@ class CfgWeapons {
         {
             type = 616;
             hmdType = 0;
-    		uniformModel = PATH_TO_ADDON_3(data,cigs,cig0.p3d);
-	    	modelOff = PATH_TO_ADDON_3(data,cigs,cig0.p3d);
+    		uniformModel = QPATHTOF(data\cigs\cig0.p3d);
+	    	modelOff = QPATHTOF(data\cigs\cig0.p3d);
             mass = 0.02;
         };
 
@@ -45,8 +45,8 @@ class CfgWeapons {
         displayName = CSTRING(cigarette);
         descriptionShort = ECSTRING(core,hmd_stage1);
 
-        model = PATH_TO_ADDON_3(data,cigs,cig1.p3d);
-        picture = PATH_TO_ADDON_3(data,ui,gear_cig1_x_ca.paa);
+        model = QPATHTOF(data\cigs\cig1.p3d);
+        picture = QPATHTOF(data\ui\gear_cig1_x_ca.paa);
 
         PVAR(initStateTime) = INITSTATETIME_VARIANT_1;
         PVAR(nextState) = QGVAR(cig2_nv);
@@ -55,8 +55,8 @@ class CfgWeapons {
         {
             type = 616;
             hmdType = 0;
-    		uniformModel = PATH_TO_ADDON_3(data,cigs,cig1.p3d);
-	    	modelOff = PATH_TO_ADDON_3(data,cigs,cig1.p3d);
+    		uniformModel = QPATHTOF(data\cigs\cig1.p3d);
+	    	modelOff = QPATHTOF(data\cigs\cig1.p3d);
         };
     };
 
@@ -66,8 +66,8 @@ class CfgWeapons {
         displayName = CSTRING(cigarette);
         descriptionShort = ECSTRING(core,hmd_stage2);
 
-        model = PATH_TO_ADDON_3(data,cigs,cig2.p3d);
-        picture = PATH_TO_ADDON_3(data,ui,gear_cig2_x_ca.paa);
+        model = QPATHTOF(data\cigs\cig2.p3d);
+        picture = QPATHTOF(data\ui\gear_cig2_x_ca.paa);
 
         PVAR(initStateTime) = INITSTATETIME_VARIANT_2;
         PVAR(nextState) = QGVAR(cig3_nv);
@@ -76,8 +76,8 @@ class CfgWeapons {
         {
             type = 616;
             hmdType = 0;
-    		uniformModel = PATH_TO_ADDON_3(data,cigs,cig2.p3d);
-	    	modelOff = PATH_TO_ADDON_3(data,cigs,cig2.p3d);
+    		uniformModel = QPATHTOF(data\cigs\cig2.p3d);
+	    	modelOff = QPATHTOF(data\cigs\cig2.p3d);
         };
     };
 
@@ -87,8 +87,8 @@ class CfgWeapons {
         displayName = CSTRING(cigarette);
         descriptionShort = ECSTRING(core,hmd_stage3);
 
-        model = PATH_TO_ADDON_3(data,cigs,cig3.p3d);
-        picture = PATH_TO_ADDON_3(data,ui,gear_cig3_x_ca.paa);
+        model = QPATHTOF(data\cigs\cig3.p3d);
+        picture = QPATHTOF(data\ui\gear_cig3_x_ca.paa);
 
         PVAR(initStateTime) = INITSTATETIME_VARIANT_3;
         PVAR(nextState) = QGVAR(cig4_nv);
@@ -97,8 +97,8 @@ class CfgWeapons {
         {
             type = 616;
             hmdType = 0;
-    		uniformModel = PATH_TO_ADDON_3(data,cigs,cig3.p3d);
-	    	modelOff = PATH_TO_ADDON_3(data,cigs,cig3.p3d);
+    		uniformModel = QPATHTOF(data\cigs\cig3.p3d);
+	    	modelOff = QPATHTOF(data\cigs\cig3.p3d);
         };
     };
 
@@ -108,8 +108,8 @@ class CfgWeapons {
         displayName = CSTRING(cigarette);
         descriptionShort = ECSTRING(core,hmd_stage4);
 
-        model = PATH_TO_ADDON_3(data,cigs,cig4.p3d);
-        picture = PATH_TO_ADDON_3(data,ui,gear_cig4_x_ca.paa);
+        model = QPATHTOF(data\cigs\cig4.p3d);
+        picture = QPATHTOF(data\ui\gear_cig4_x_ca.paa);
 
         PVAR(initStateTime) = INITSTATETIME_VARIANT_4;
         PVAR(nextState) = "";
@@ -118,8 +118,8 @@ class CfgWeapons {
         {
             type = 616;
             hmdType = 0;
-    		uniformModel = PATH_TO_ADDON_3(data,cigs,cig4.p3d);
-	    	modelOff = PATH_TO_ADDON_3(data,cigs,cig4.p3d);
+    		uniformModel = QPATHTOF(data\cigs\cig4.p3d);
+	    	modelOff = QPATHTOF(data\cigs\cig4.p3d);
         };
     };
 };
