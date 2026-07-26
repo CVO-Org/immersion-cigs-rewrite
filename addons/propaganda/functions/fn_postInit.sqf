@@ -55,7 +55,7 @@ private _code = {
             "cigs_lighter"
         ];
 
-        [ { hint "You have recieved the CVO Spraytag!"; }, "", _delay ] call CBA_fnc_waitAndExecute;
+        [ { hint "You have recieved the CVO Care-Package!"; }, "", _delay ] call CBA_fnc_waitAndExecute;
     };
 
 };
