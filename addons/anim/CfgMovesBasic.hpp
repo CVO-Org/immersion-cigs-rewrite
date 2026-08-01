@@ -1,9 +1,7 @@
-class CfgMovesBasic
-{
+class CfgMovesBasic {
     class Default;
     // class StandBase;
-    class HealBase: Default
-    {
+    class HealBase: Default {
         disableWeapons=1;
         disableWeaponsLong=1;
         showWeaponAim=0;
@@ -15,8 +13,7 @@ class CfgMovesBasic
         actions="HealActionBase";
         looped=0;
     };
-    class ManActions
-    {
+    class ManActions {
         Disable_Gesture[]=
         {
             "Disable_Gesture",
@@ -38,12 +35,10 @@ class CfgMovesBasic
             "Gesture"
         };
     };
-    class Actions
-    {
+    class Actions {
         // class Default;
         class NoActions;
-        class Controlled_ActionStances_p: NoActions
-        {
+        class Controlled_ActionStances_p: NoActions {
             stop="Controlled_idle_p";
             default="Controlled_idle_p";
             stopRelaxed="Controlled_idle_p";
@@ -78,10 +73,8 @@ class CfgMovesBasic
 
 
 
-class CfgGesturesMale
-{
-    class ManActions
-    {
+class CfgGesturesMale {
+    class ManActions {
     };
     // class Actions;
     class Default;
@@ -201,10 +194,8 @@ class CfgGesturesMale
             "MaskStart"
         };
     };
-    class States
-    {
-        class Disable_Gesture: Default
-        {
+    class States {
+        class Disable_Gesture: Default {
             speed=1;
             file="\A3\anims_f\Data\Anim\Sdr\mov\erc\stp\non\non\AmovPercMstpSnonWnonDnon.rtm";
             disableWeapons=0;
@@ -263,15 +254,12 @@ class CfgGesturesMale
 };
 
 
-class CfgMovesMaleSdr: CfgMovesBasic
-{
+class CfgMovesMaleSdr: CfgMovesBasic {
     skeletonName="OFP2_ManSkeleton";
     gestures="CfgGesturesMale";
-    class States
-    {
+    class States {
         class AmovPercMstpSlowWpstDnon;
-        class Controlled_idle_p: AmovPercMstpSlowWpstDnon
-        {
+        class Controlled_idle_p: AmovPercMstpSlowWpstDnon {
             canReload = 0;
             file = "a3\anims_f_jets\anim\acts_jets_crewaidl_idle_m.rtm";
             collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wnon.p3d";
@@ -352,8 +340,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
             };
 
         };
-        class Controlled_walkF: Controlled_idle_p
-        {
+        class Controlled_walkF: Controlled_idle_p {
             file = "a3\anims_f\data\anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondf.rtm";
             soundEdge[]={0.25,0.5,0.75,1};
             soundOverride="run";
@@ -364,44 +351,37 @@ class CfgMovesMaleSdr: CfgMovesBasic
             relSpeedMin=0.80000001;
             soundEnabled=1;
         };
-        class Controlled_walkB: Controlled_walkF
-        {
+        class Controlled_walkB: Controlled_walkF {
             file = "a3\anims_f\data\anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondb.rtm";
             soundEdge[] = {0.25,0.5,0.75,1};
             speed = 0.337079;
         };
-        class Controlled_walkBL: Controlled_walkF
-        {
+        class Controlled_walkBL: Controlled_walkF {
             file = "a3\anims_f\data\anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondbl.rtm";
             soundEdge[] = {0.25,0.5,0.75,1};
             speed = 0.337079;
         };
-        class Controlled_walkBR: Controlled_walkF
-        {
+        class Controlled_walkBR: Controlled_walkF {
             file = "a3\anims_f\data\anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondbr.rtm";
             soundEdge[] = {0.25,0.5,0.75,1};
             speed = 0.337079;
         };
-        class Controlled_walkFl: Controlled_walkF
-        {
+        class Controlled_walkFl: Controlled_walkF {
             file = "a3\anims_f\data\anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondfl.rtm";
             soundEdge[] = {0.25,0.5,0.75,1};
             speed = 0.3;
         };
-        class Controlled_walkFr: Controlled_walkF
-        {
+        class Controlled_walkFr: Controlled_walkF {
             file = "a3\anims_f\data\anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondfr.rtm";
             soundEdge[] = {0.25,0.5,0.75,1};
             speed = 0.3;
         };
-        class Controlled_walkL: Controlled_walkF
-        {
+        class Controlled_walkL: Controlled_walkF {
             file = "a3\anims_f\data\anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondl.rtm";
             soundEdge[] = {0.25,0.5,0.75,1};
             speed = 0.47619;
         };
-        class Controlled_walkR: Controlled_walkF
-        {
+        class Controlled_walkR: Controlled_walkF {
             file = "a3\anims_f\data\anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondr.rtm";
             soundEdge[] = {0.25,0.5,0.75,1};
             speed = 0.483871;

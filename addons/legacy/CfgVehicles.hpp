@@ -1,5 +1,4 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class EGVAR(pops,poppackItem);
     class immersion_pops_poppackItem: EGVAR(pops,poppackItem)
     {

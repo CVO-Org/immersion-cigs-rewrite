@@ -1,7 +1,5 @@
-class CfgFunctions
-{
-    class ADDON
-    {
+class CfgFunctions {
+    class ADDON {
         // tag = "cigs"; // the function will be named TAG_fnc_myOtherFunction
         class common {
             file = PATH_TO_FUNC_SUB(common);
@@ -10,8 +8,7 @@ class CfgFunctions
             class postInit { postInit = 1; };
         };
 
-        class cigs_on_ai
-        {
+        class cigs_on_ai {
             file = PATH_TO_FUNC_SUB(cigs_on_ai);
 
             class cbaSetting_addSetting {};

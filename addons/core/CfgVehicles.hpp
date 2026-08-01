@@ -1,5 +1,4 @@
-class CfgVehicles
-{
+class CfgVehicles {
 
     #include "CfgVehiclesAceActions.hpp"
 

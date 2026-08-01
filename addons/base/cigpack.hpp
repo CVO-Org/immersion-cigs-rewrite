@@ -1,6 +1,5 @@
 // Weaponholder - The "empty vehicle" to be placed in the world.
-class CfgVehicles
-{
+class CfgVehicles {
     class WeaponHolder_Single_limited_item_F;
 
     class GVAR(cigpackItem): WeaponHolder_Single_limited_item_F {
