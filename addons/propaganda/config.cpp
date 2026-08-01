@@ -34,3 +34,4 @@ class CfgPatches {
 
 #include "CfgFunctions.hpp"
 #include "ACE_Tags.hpp"
+#include "CfgSounds.hpp"

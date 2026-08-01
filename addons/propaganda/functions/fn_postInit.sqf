@@ -55,10 +55,16 @@ private _code = {
             "cigs_lighter"
         ];
 
-        [ { hint "You have recieved the CVO Care-Package!"; }, "", _delay ] call CBA_fnc_waitAndExecute;
+        [
+            {
+                [ ["<img image='%1' size=5></img><br/>%2", QPATHTOF(data\cvo_stencil_white_ca.paa), "You recieved the Care-Package!"], 4 ] call ace_common_fnc_displayTextStructured;
+                [player, "cvo_raven_caw", 25, false, false, 0.15] call CBA_fnc_globalSay3D;
+            },
+            nil,
+            _delay
+        ] call CBA_fnc_waitAndExecute;
     };
-
 };
 
 // Delayed Execution
-[ _code, [], 30 ] call CBA_fnc_waitAndExecute;
+[ _code, [], 15 + random 3 ] call CBA_fnc_waitAndExecute;
