@@ -297,7 +297,7 @@
     <Package name="Incompatibility">
         <Key ID="STR_cigs_core_incompat_message1">
             <English>The following mods are incompatible:</English>
-            <French>Les mods suivants sont incompatibles :</French>
+            <French>Les mods suivants sont incompatibles:</French>
             <Japanese>このMODは互換性がありません:</Japanese>
         </Key>
         <Key ID="STR_cigs_core_incompat_message2">
@@ -312,7 +312,7 @@
         </Key>
         <Key ID="STR_cigs_core_incompat_title">
             <English>%1: Incompatible Mods</English>
-            <French>%1 : Mods incompatibles</French>
+            <French>%1: Mods incompatibles</French>
             <Japanese>%1: 非互換MOD</Japanese>
         </Key>
     </Package>

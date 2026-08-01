@@ -32,10 +32,10 @@ class CfgPatches {
     };
 
     // Create Dummy CfgPatches Addons to avoid Missing Addons Errors
-    class murshun_cigs : ADDON {};
-    class immersion_pops : ADDON {};
-    class immersion_cigs_animations : ADDON {};
-    class murshun_cigs_hotfix : ADDON {};
+    class murshun_cigs: ADDON {};
+    class immersion_pops: ADDON {};
+    class immersion_cigs_animations: ADDON {};
+    class murshun_cigs_hotfix: ADDON {};
 };
 
 #include "CfgFunctions.hpp"
