@@ -8,8 +8,8 @@ class CfgFunctions {
             class postInit { postInit = 1; };
         };
 
-        class cigs_on_ai {
-            file = PATH_TO_FUNC_SUB(cigs_on_ai);
+        class aiCigs {
+            file = PATH_TO_FUNC_SUB(aiCigs);
 
             class cbaSetting_addSetting {};
             class cbaSetting_perSide {};
@@ -21,6 +21,7 @@ class CfgFunctions {
             class processQueue {};
 
             class addCigItemsToUnit {};
+            class getCigItems {};
         };
 
         class dynamicSmoking {

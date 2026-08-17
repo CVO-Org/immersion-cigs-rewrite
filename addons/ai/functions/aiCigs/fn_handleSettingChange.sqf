@@ -20,17 +20,19 @@
 
 params ["_setting", "_value"];
 
-if !("set_cigsonai_custom_#" in _setting) exitWith {};
+if !("set_aiCigs_custom_#" in _setting) exitWith {};
 
 private _arr = _setting splitString "#" select 1 splitString "_";
 private _sideStr = _arr deleteAt 0;
 private _className = _arr joinString "_";
 
-private _map = missionNamespace getVariable QGVAR(cigsOnAI_hashmap);
+private _map = missionNamespace getVariable QEGVAR(aiCigs,settings);
+
+if (isNil "_map" && {isNil "_value"}) exitWith {};
 
 if (isNil "_map") then {
     _map = createHashMap;
-    missionNamespace setVariable [QGVAR(cigsOnAI_hashmap), _map];
+    missionNamespace setVariable [QEGVAR(aiCigs,settings), _map];
 };
 
 private _array = _map getOrDefault [_sideStr, [], true];
@@ -39,5 +41,3 @@ switch (_value) do {
     case true:  { _array pushBackUnique _className };
     case false: { _array = _array - [_className] };
 };
-
-// _map set [_sideStr, _array]; // not needed, since the array is already referenced in the hashmap through getOrDefault
