@@ -27,7 +27,7 @@ class CfgPatches {
         units[] = {};
 
         // List of weapons (CfgWeapons classes) contained in the addon.
-        weapons[] = {};
+        weapons[] = { "CVO_SpraypaintWhite", "CVO_SpraypaintBlack", "CVO_SpraypaintRed" };
 
     };
 };
@@ -35,3 +35,4 @@ class CfgPatches {
 #include "CfgFunctions.hpp"
 #include "ACE_Tags.hpp"
 #include "CfgSounds.hpp"
+#include "CfgWeapons.hpp"
