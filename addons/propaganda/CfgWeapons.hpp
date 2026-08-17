@@ -1,0 +1,33 @@
+class CfgWeapons {
+
+    class CBA_MiscItem_ItemInfo;
+
+    class ACE_SpraypaintBlack;
+    class ACE_SpraypaintWhite;
+    class ACE_SpraypaintRed;
+
+    class CVO_SpraypaintBlack: ACE_SpraypaintBlack {
+        author = "Zorn";
+        displayName = "CVO Spraycan";
+        scope = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class CVO_SpraypaintWhite: ACE_SpraypaintWhite {
+        author = "Zorn";
+        displayName = "CVO Spraycan";
+        scope = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+    class CVO_SpraypaintRed: ACE_SpraypaintRed {
+        author = "Zorn";
+        displayName = "CVO Spraycan";
+        scope = 1;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 1;
+        };
+    };
+};
