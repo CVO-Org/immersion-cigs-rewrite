@@ -1,7 +1,11 @@
 #define MAJOR 2
 #define MINOR 9
 #define PATCH 9
+<<<<<<< Updated upstream
 #define BUILD 697
+=======
+#define BUILD 700
+>>>>>>> Stashed changes
 
 
 // #define VERSION MACROS

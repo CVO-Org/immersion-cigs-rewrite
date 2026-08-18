@@ -71,3 +71,5 @@ class CfgGlasses {
         displayName = "DEPRECATED";
     };
 };
+
+#undef PROPERTIES
