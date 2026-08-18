@@ -17,9 +17,7 @@
 
 params ["_unit"];
 
-private _map = missionNamespace getVariable [QGVAR(cigsOnAI_hashmap), nil];
-
-if ( isNull _unit || { isNil "_map" } ) exitWith {};
+if ( isNull _unit ) exitWith {};
 
 // Check if Unit has a Uniform Container
 
@@ -28,9 +26,8 @@ if (isNull _uniformContainer) exitWith {};
 
 
 //Prep Possible Package Classes
-private _packagePool = (_map get str side _unit);
+private _packagePool = _unit call FUNC(getCigItems);
 if (_packagePool isEqualTo []) exitWith { ERROR_2("No Cigs enabled for %1 - %2",_unit,str side _unit) };
-
 
 // Nested Array of ["Classname", AmmoCount, isSmokable]
 private _consumables = [];
