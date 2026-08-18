@@ -8,14 +8,14 @@ class EditorData
 	toggles=37;
 	class ItemIDProvider
 	{
-		nextID=389;
+		nextID=392;
 	};
 	class Camera
 	{
 		pos[]={1710.6022,16.727694,5197.1782};
-		dir[]={-0.40742576,-0.57629001,-0.70844722};
-		up[]={-0.2873005,0.81724375,-0.49956906};
-		aside[]={-0.86687177,-1.1546945e-07,0.49853495};
+		dir[]={-0.31146541,-0.55817956,-0.76904488};
+		up[]={-0.20953321,0.82971805,-0.51736045};
+		aside[]={-0.92687207,-1.9019353e-08,0.37538549};
 	};
 };
 binarizationWanted=0;
@@ -46,13 +46,14 @@ addons[]=
 	"A3_Characters_F",
 	"A3_Soft_F_Offroad_01",
 	"cigs_nil",
-	"A3_Characters_F_Mark"
+	"A3_Characters_F_Mark",
+	"cigs_ai"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=23;
+		items=24;
 		class Item0
 		{
 			className="A3_Characters_F_Exp";
@@ -213,6 +214,13 @@ class AddonsMetaData
 			name="Arma 3 Marksmen - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item23
+		{
+			className="cigs_ai";
+			name="Immersive Cigs - Rewrite - AI Framework";
+			author="Immersive Cigs - Rewrite Team";
+			url="https://github.com/OverlordZorn/immersive-cigs-rewrite";
 		};
 	};
 };
@@ -522,7 +530,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=133;
+		items=134;
 		class Item0
 		{
 			dataType="Group";
@@ -4163,6 +4171,72 @@ class Mission
 			{
 			};
 			id=387;
+		};
+		class Item133
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1697.175,5,5185.0918};
+			};
+			id=391;
+			type="cigs_aiCigs_module";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="cigs_aiCigs_guer";
+					expression="_this setVariable ['cigs_aiCigs_guer',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="cigs_aiCigs_civ";
+					expression="_this setVariable ['cigs_aiCigs_civ',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="cigs_aiCigs_east";
+					expression="_this setVariable ['cigs_aiCigs_east',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="cigs_aiCigs_west";
+					expression="_this setVariable ['cigs_aiCigs_west',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 };

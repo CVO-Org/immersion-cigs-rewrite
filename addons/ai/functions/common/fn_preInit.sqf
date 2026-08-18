@@ -23,16 +23,22 @@
 
 if (!isServer) exitWith {};
 
-//////////////////////////////////////////////////
 ///////////// Cigs on AI
-//////////////////////////////////////////////////
 
 ["CBA_SettingChanged", FUNC(handleSettingChange)] call CBA_fnc_addEventHandler;
 addMissionEventHandler ["EntityCreated", FUNC(onEntityCreated)];
 
-//////////////////////////////////////////////////
+// Default Hashmap
+
+EGVAR(aiCigs,default) = createHashMapFromArray [
+    [ "WEST", [ QEGVAR(morley,cigpack),     QEGVAR(crayons,crayonpack) ]  ],
+    [ "EAST", [ QEGVAR(apollo,cigpack),     QEGVAR(kosmos,cigpack)     ]  ],
+    [ "GUER", [ QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack) ] ],
+    [ "CIV",  [ QEGVAR(morley,cigpack),     QEGVAR(pops,poppack), QEGVAR(nil,cigpack), QEGVAR(apollo,cigpack), QEGVAR(kosmos,cigpack), QEGVAR(baja_blast,cigpack), QEGVAR(black_devil,cigpack), QEGVAR(crayons,crayonpack) ] ]
+];
+
+
 ///////////// Dynamic AI Smoking
-//////////////////////////////////////////////////
 
 GVAR(dynamicSmoking_units) = [];
 

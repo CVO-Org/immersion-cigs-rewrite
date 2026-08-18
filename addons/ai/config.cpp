@@ -34,3 +34,6 @@ class CfgPatches {
 
 #include "CfgFunctions.hpp"
 #include "XEH\CfgXEH.hpp"
+
+#include "CfgFactionClasses.hpp"
+#include "CfgVehicles.hpp"
