@@ -17,3 +17,5 @@ class CfgVehicles {
     class PVAR(matchesItem);
     class murshun_cigs_matchesItem: PVAR(matchesItem) { PROPERTIES; };
 };
+
+#undef PROPERTIES

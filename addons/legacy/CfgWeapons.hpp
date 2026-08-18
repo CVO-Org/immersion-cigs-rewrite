@@ -44,3 +44,5 @@ class CfgWeapons {
     class EGVAR(pops,pop0_nv);
     class immersion_pops_pop0_nv: EGVAR(pops,pop0_nv) { PROPERTIES; };
 };
+
+#undef PROPERTIES
