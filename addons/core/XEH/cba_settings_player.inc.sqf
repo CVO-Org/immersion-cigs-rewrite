@@ -116,15 +116,15 @@ private _aceLoaded = isClass (configFile >> "CfgPatches" >> "ace_arsenal");
 
 if (_aceLoaded) then {
     [
-        QSET(ace_arsenal_tab),                    //    _setting     - Unique setting name. Matches resulting variable name <STRING>
+        QSET(ace_arsenal_tab),                      //    _setting     - Unique setting name. Matches resulting variable name <STRING>
         "CHECKBOX",                                //    _settingType - Type of setting. Can be "CHECKBOX", "EDITBOX", "LIST", "SLIDER" or "COLOR" <STRING>
         SETLSTRING(ace_arsenal_tab),
-                                                //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
+                                                    //    _title       - Display name or display name + tooltip (optional, default: same as setting name) <STRING, ARRAY>
         [LSTRING(set_mainCat_player),LSTRING(set_subCat_ace_arsenal)],        //    _category    - Category for the settings menu + optional sub-category <STRING, ARRAY>
-        true,                                    //    _valueInfo   - Extra properties of the setting depending of _settingType. See examples below <ANY>
-        0,                                        //    _isGlobal    - 1: all clients share the same setting, 2: setting can't be overwritten (optional, default: 0) <NUMBER>
-        FUNC(arsenalTab),        //    _script      - Script to execute when setting is changed. (optional) <CODE>
-        false                                    //    _needRestart - Setting will be marked as needing mission restart after being changed. (optional, default false) <BOOL>
+        true,                                       //    _valueInfo   - Extra properties of the setting depending of _settingType. See examples below <ANY>
+        0,                                          //    _isGlobal    - 1: all clients share the same setting, 2: setting can't be overwritten (optional, default: 0) <NUMBER>
+        FUNC(arsenalTab),                           //    _script      - Script to execute when setting is changed. (optional) <CODE>
+        false                                       //    _needRestart - Setting will be marked as needing mission restart after being changed. (optional, default false) <BOOL>
     ] call CBA_fnc_addSetting;
 };
 
