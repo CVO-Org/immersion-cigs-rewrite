@@ -8,14 +8,14 @@ class EditorData
 	toggles=37;
 	class ItemIDProvider
 	{
-		nextID=391;
+		nextID=392;
 	};
 	class Camera
 	{
 		pos[]={1710.6022,16.727694,5197.1782};
-		dir[]={-0.40742576,-0.57629001,-0.70844722};
-		up[]={-0.2873005,0.81724375,-0.49956906};
-		aside[]={-0.86687177,-1.1546945e-07,0.49853495};
+		dir[]={-0.31146541,-0.55817956,-0.76904488};
+		up[]={-0.20953321,0.82971805,-0.51736045};
+		aside[]={-0.92687207,-1.9019353e-08,0.37538549};
 	};
 };
 binarizationWanted=0;
@@ -4177,10 +4177,10 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1699.75,5,5187};
+				position[]={1697.175,5,5185.0918};
 			};
-			id=390;
-			type="cigs_ai_aiCigs_module";
+			id=391;
+			type="cigs_aiCigs_module";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4218,7 +4218,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="abc,asdf asdf,asdf";
+							value="";
 						};
 					};
 				};
@@ -4231,7 +4231,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="123,12";
+							value="";
 						};
 					};
 				};
