@@ -25,23 +25,23 @@ private _code = {
     params ["_unit"];
 
     // Check if valid target
-    if !( missionNamespace getVariable [ [ QSET(cigsonai_side_enabled), str side _unit ] joinString "_", false ] ) exitWith {};
-    if !(_unit getVariable [QEGVAR(api,blockCigsOnAI), false]) exitWith {};
+    if !( missionNamespace getVariable [ [ QSET(aiCigs_side_enabled), str side _unit ] joinString "_", false ] ) exitWith {};
+    if !(_unit getVariable [QEGVAR(api,blockAiCigs), false]) exitWith {};
 
     // Proceed
-    private _counter = missionNamespace getVariable [QGVAR(counter_cigsonai), 0];
+    private _counter = missionNamespace getVariable [QGVAR(counter_aiCigs), 0];
     _counter = _counter + 1;
-    missionNamespace setVariable [QGVAR(counter_cigsonai), _counter];
+    missionNamespace setVariable [QGVAR(counter_aiCigs), _counter];
 
 
     if (isNull _unit || {isPlayer _unit}) exitWith {};
 
-    private _queue = missionNamespace getVariable [QGVAR(cigsonai_queue), nil];
+    private _queue = missionNamespace getVariable [QGVAR(aiCigs_queue), nil];
     private _startPFEH = false;
 
     if (isNil "_queue") then {
         _queue = [];
-        missionNamespace setVariable [QGVAR(cigsonai_queue), _queue];
+        missionNamespace setVariable [QGVAR(aiCigs_queue), _queue];
         _startPFEH = true;
     };
 
@@ -61,12 +61,12 @@ private _code = {
                             {
                                 params ["", "_handle"];
 
-                                private _queue = missionNamespace getVariable [QGVAR(cigsonai_queue), nil];
+                                private _queue = missionNamespace getVariable [QGVAR(aiCigs_queue), nil];
                                 if (isNil "_queue") exitWith { _handle call CBA_fnc_removePerFrameHandler; };
 
                                 [_queue deleteAt 0] call FUNC(processQueue);
 
-                                if (count _queue == 0) then { missionNamespace setVariable [QGVAR(cigsonai_queue), nil]; };
+                                if (count _queue == 0) then { missionNamespace setVariable [QGVAR(aiCigs_queue), nil]; };
                             },
                             0.1,
                             []

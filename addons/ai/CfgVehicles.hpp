@@ -2,28 +2,28 @@ class CfgVehicles {
     class Logic;
     class Module_F: Logic {
         class AttributesBase {
-            class Default;
+            // class Default;
             class Edit;                 // Default edit box (i.e. text input field)
-            class Combo;                // Default combo box (i.e. drop-down menu)
-            class Checkbox;             // Default checkbox (returned value is Boolean)
-            class CheckboxNumber;       // Default checkbox (returned value is Number)
-            class ModuleDescription;    // Module description
-            class Units;                // Selection of units on which the module is applied
+            // class Combo;                // Default combo box (i.e. drop-down menu)
+            // class Checkbox;             // Default checkbox (returned value is Boolean)
+            // class CheckboxNumber;       // Default checkbox (returned value is Number)
+            // class ModuleDescription;    // Module description
+            // class Units;                // Selection of units on which the module is applied
         };
 
         // Description base classes (for more information see below):
         class ModuleDescription {
-            class AnyBrain;
+            // class AnyBrain;
         };
     };
 
-    class GVAR(aiCigs_module): Module_F {
+    class EGVAR(aiCigs,module): Module_F {
         // Standard object definitions:
         scope = 2;                                                      // Editor visibility; 2 will show it in the menu, 1 will hide it.
         scopeCurator = 1;                                               // Zeus visibility
         displayName = ECSTRING(aiCigs,module_displayName);                   // Name displayed in the menu
         icon = QPATHTOEF(core,data\UI\light_cig.paa);    // Map icon. Delete this entry to use the default icon.
-        category = QGVAR(factionClass);
+        category = QEGVAR(aiCigs,factionClass);
 
         function = QFUNC(aiCigs_module);        // Name of function triggered once conditions are met
         functionPriority = 10;                  // Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -43,28 +43,28 @@ class CfgVehicles {
             // Module-specific arguments:
             class EGVAR(aiCigs,west): Edit {
                 displayName = "WEST";
-                tooltip = ECSTRING(aiCigs,tooltip);
+                tooltip = ECSTRING(aiCigs,module_tooltip);
                 property = QEGVAR(aiCigs,west);
                 // Default text for the input box:
                 defaultValue = "''"; // Because this is an expression, one must have a string within a string to return a string
             };
             class EGVAR(aiCigs,east): Edit {
                 displayName = "EAST";
-                tooltip = ECSTRING(aiCigs,tooltip);
+                tooltip = ECSTRING(aiCigs,module_tooltip);
                 property = QEGVAR(aiCigs,east);
                 // Default text for the input box:
                 defaultValue = "''"; // Because this is an expression, one must have a string within a string to return a string
             };
             class EGVAR(aiCigs,guer): Edit {
                 displayName = "GUER";
-                tooltip = ECSTRING(aiCigs,tooltip);
+                tooltip = ECSTRING(aiCigs,module_tooltip);
                 property = QEGVAR(aiCigs,guer);
                 // Default text for the input box:
                 defaultValue = "''"; // Because this is an expression, one must have a string within a string to return a string
             };
             class EGVAR(aiCigs,civ): Edit {
                 displayName = "CIV";
-                tooltip = ECSTRING(aiCigs,tooltip);
+                tooltip = ECSTRING(aiCigs,module_tooltip);
                 property = QEGVAR(aiCigs,civ);
                 // Default text for the input box:
                 defaultValue = "''"; // Because this is an expression, one must have a string within a string to return a string

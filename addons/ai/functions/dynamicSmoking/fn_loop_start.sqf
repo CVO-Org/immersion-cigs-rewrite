@@ -22,12 +22,12 @@ if (isNil QGVAR(dynamicSmoking_LoopRunning)) then {
 
     GVAR(dynamicSmoking_LoopRunning) = true;
     
-    // Wait until There are any smokers defined + the cigsonai queue is empty
+    // Wait until There are any smokers defined + the aiCigs queue is empty
     [
         {
             GVAR(dynamicSmoking_units) isNotEqualTo []
             &&
-            { isNil QGVAR(cigsonai_queue) }
+            { isNil QGVAR(aiCigs_queue) }
         },
         {            
             // Start Cleanup

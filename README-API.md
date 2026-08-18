@@ -24,7 +24,7 @@ Make sure to broadcast the variable as the checks will be on the individual clie
 | ------------------------------ | ------ | ---------------------------------------------------- |
 | `cigs_api_blockAnimations`     | true   | Will block all cigs related animations on said unit. |
 | `cigs_api_blockDynamicSmoking` | true   | Will block unit from smoking dynamically.            |
-| `cigs_api_blockCigsOnAI`       | true   | Will block unit from getting cig items dynamically.  |
+| `cigs_api_blockAiCigs`       | true   | Will block unit from getting cig items dynamically.  |
 
 
 ## Useful Functions
@@ -33,4 +33,30 @@ Make sure to broadcast the variable as the checks will be on the individual clie
 - `["LIGHTERS"] call cigs_core_fnc_getAllItems;` - To retrieve all Lighters classnames
 - `["ALL"] call cigs_core_fnc_getAllItems;` - To retrieve Both
 
-<!-- - `[_unit, "cigs_baja_blast_cigpack"] call cigs_ai_fnc_startConsuming;` to give ai cigarettes and make them consume. --->
+
+## Ai Cigs Distribution
+There are multiple ways to define which side will have which cigarettes.
+
+The following is ordered by priority.
+
+### Global Variable `cigs_aiCigs_api`
+
+This global variable must be defined on the server and contain a hashmap.
+The following keys will be checked: `"WEST", "EAST", "GUER", "CIV"`.
+The value of each key must be an array with classnames of pop/cigs_packages.
+
+If the GVAR is defined but empty, aiCigs will be effectively disabled.
+
+### 3den Module `cigs_aiCigs_module`
+When placed, this 3den Module lets you provide classnames of pop/cigs_packages per side.
+If the module is placed but empty, no packages will be distributed.
+
+### CBA Settings 
+Per side, each cigarette brand has its own setting, which can be enabled or disabled.
+By default, every setting is disabled and will not be considered for the distribution of packages on AI.
+Once a single setting is enabled, the CBA Settings system will be activated and in effect.
+If only one side has settings enabled while others are left disabled, those other sides will not receive any cigarettes.
+
+### Default Setup
+The Mod will come with a default distribution of packages.
+This only takes effect when none of the other methods above are in use.

@@ -17,6 +17,7 @@
 * Public: No
 */
 
+if (!isServer) exitWith {};
 
 params ["_setting", "_value"];
 

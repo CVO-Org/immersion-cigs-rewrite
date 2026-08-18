@@ -6,19 +6,19 @@
             <French>Immersive Cigs - AI</French>
             <Japanese>Immersive Cigs - AI</Japanese>
         </Key>
-        <Key ID="STR_cigs_ai_set_subCat_cigsonai">
-            <English>02. Cigs on AI</English>
-            <French>02. Cigs on AI</French>
+        <Key ID="STR_cigs_ai_set_subCat_aiCigs">
+            <English>02. AI Cigs</English>
+            <French>02. AI Cigs</French>
             <Japanese>02. AIのタバコ</Japanese>
         </Key>
-        <Key ID="STR_cigs_ai_set_subCat_cigsonai_sides">
-            <English>04. Cigs on AI</English>
-            <French>04. Cigs on AI</French>
+        <Key ID="STR_cigs_ai_set_subCat_aiCigs_sides">
+            <English>04. AI Cigs</English>
+            <French>04. AI Cigs</French>
             <Japanese>04. AIのタバコ</Japanese>
         </Key>
-        <Key ID="STR_cigs_ai_set_subCat_cigsonai_sides_enabled">
-            <English>03. Cigs on AI - Enable individual Side</English>
-            <French>03. Cigs on AI - Enable individual Side</French>
+        <Key ID="STR_cigs_ai_set_subCat_aiCigs_sides_enabled">
+            <English>03. AI Cigs - Enable individual Side</English>
+            <French>03. AI Cigs - Enable individual Side</French>
             <Japanese>03. AIのタバコ - 陣営別に有効</Japanese>
         </Key>
         <Key ID="STR_cigs_ai_set_subCat_dynamicAiSmoking">
@@ -27,43 +27,43 @@
             <Japanese>01. ダイナミックAI喫煙</Japanese>
         </Key>
     </Package>
-    <Package name="CBASettings_cigsonai">
-        <Key ID="STR_cigs_ai_set_cigsonai_chance">
+    <Package name="CBASettings_aiCigs">
+        <Key ID="STR_cigs_ai_set_aiCigs_chance">
             <English>Probability</English>
             <French>Probabilité</French>
             <Japanese>可能性</Japanese>
         </Key>
-        <Key ID="STR_cigs_ai_set_cigsonai_chance_desc">
+        <Key ID="STR_cigs_ai_set_aiCigs_chance_desc">
             <English>Defines how likely it is that a unit has cigarettes on them.</English>
             <French>Définit la probabilité qu'une unité ait des cigarettes sur elle.</French>
             <Japanese>ユニット上にタバコが置かれている可能性を定義します。</Japanese>
         </Key>
-        <Key ID="STR_cigs_ai_set_cigsonai_delay">
+        <Key ID="STR_cigs_ai_set_aiCigs_delay">
             <English>Delay</English>
             <French>Délai</French>
             <Japanese>遅延</Japanese>
         </Key>
-        <Key ID="STR_cigs_ai_set_cigsonai_delay_desc">
+        <Key ID="STR_cigs_ai_set_aiCigs_delay_desc">
             <English>Delays the addition of items, incase some mod/mission does some scripted inventory managemement.</English>
             <French>Retarde l'ajout d'objets, au cas où un mod/mission ferait de la gestion d'inventaire par script.</French>
             <Japanese>一部のMODやミッションがスクリプトによるインベントリ管理を行う場合に備えて、アイテムの追加を遅延させます。</Japanese>
         </Key>
-        <Key ID="STR_cigs_ai_set_cigsonai_enable">
+        <Key ID="STR_cigs_ai_set_aiCigs_enable">
             <English>Enable</English>
             <French>Activer</French>
             <Japanese>有効化</Japanese>
         </Key>
-        <Key ID="STR_cigs_ai_set_cigsonai_enable_desc">
+        <Key ID="STR_cigs_ai_set_aiCigs_enable_desc">
             <English>Enables the system to distribute cigarettes across AI units.</English>
             <French>Permet au système de distribuer des cigarettes parmi les objets de l'IA.</French>
             <Japanese>システムがAIユニット間でタバコを分配できるようにする。</Japanese>
         </Key>
-        <Key ID="STR_cigs_ai_set_cigsonai_side_enabled">
+        <Key ID="STR_cigs_ai_set_aiCigs_side_enabled">
             <English>Enable for %1</English>
             <French>Activer pour %1</French>
             <Japanese>%1 に対して有効化</Japanese>
         </Key>
-        <Key ID="STR_cigs_ai_set_cigsonai_side_enabled_desc">
+        <Key ID="STR_cigs_ai_set_aiCigs_side_enabled_desc">
             <English>Controls if ai units on the %1 side shall recieve cigarettes.</English>
             <French>Contrôle si les unités IA du côté %1 doivent recevoir des cigarettes.</French>
             <Japanese>%1側のAIユニットがタバコを受け取るかどうかを制御します。</Japanese>
@@ -121,17 +121,12 @@
             <Japanese>両方のスロットが既に占有されている場合、アイテムを置く優先スロットを定義します。</Japanese>
         </Key>
     </Package>
-    <Package name="factionClass">
-        <Key ID="STR_cigs_ai_factionClass_CigsOnAi">
-            <English>Immersive Cigs</English>
-        </Key>
-    </Package>
     <Package name="modules">
         <Key ID="STR_cigs_aiCigs_module_displayName">
-            <English>Configure Cigs on AI</English>
+            <English>Configure AI Cigs</English>
         </Key>
         <Key ID="STR_cigs_aiCigs_module_tooltip">
-            <English>Provide classname of cigarette packages for this side</English>
+            <English>Provide classnames of cigarette packages for this side.\nSeperated by , or space</English>
         </Key>
     </Package>
 </Project>
