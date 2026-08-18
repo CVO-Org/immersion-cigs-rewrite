@@ -24,8 +24,7 @@ class CfgWeapons {
         PVAR(totalSucks) = SUCKS_TOTAL;
         PVAR(flavor) =  "existential anguish"; 
 
-        class ItemInfo
-        {
+        class ItemInfo {
             type = 616;
             hmdType = 0;
             uniformModel = QPATHTOF(data\crayon\crayon.p3d);

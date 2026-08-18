@@ -1,10 +1,7 @@
 class Man;
-class CAManBase: Man
-{
-    class ACE_Actions
-    {
-        class ACE_Head
-        {
+class CAManBase: Man {
+    class ACE_Actions {
+        class ACE_Head {
             class PVAR(start_cig_their)
             {
                 displayName = CSTRING(start_cig_their);
@@ -26,8 +23,7 @@ class CAManBase: Man
         };
     };
 
-    class ACE_SelfActions
-    {
+    class ACE_SelfActions {
         class ACE_Equipment {
             // Take from Pack
             class PVAR(takeFromPack)

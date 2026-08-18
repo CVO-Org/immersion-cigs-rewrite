@@ -35,5 +35,5 @@ if (_index > -1) exitWith { [_items select _index, "typeItem"] };
 
 
 // The whole "Infinite Lighter" Thing was in preperations for compat items, like the sog:pf cigs.
-// Only afterwards i realised that those are also defined as CfgMagazines :harold: - I leave it in for now, just in case
+// Only afterwards i realised that those are also defined as CfgMagazines:harold: - I leave it in for now, just in case
 */
