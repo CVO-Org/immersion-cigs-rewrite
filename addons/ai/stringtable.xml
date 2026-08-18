@@ -121,4 +121,17 @@
             <Japanese>両方のスロットが既に占有されている場合、アイテムを置く優先スロットを定義します。</Japanese>
         </Key>
     </Package>
+    <Package name="factionClass">
+        <Key ID="STR_cigs_ai_factionClass_CigsOnAi">
+            <English>Immersive Cigs</English>
+        </Key>
+    </Package>
+    <Package name="modules">
+        <Key ID="STR_cigs_aiCigs_module_displayName">
+            <English>Configure Cigs on AI</English>
+        </Key>
+        <Key ID="STR_cigs_aiCigs_module_tooltip">
+            <English>Provide classname of cigarette packages for this side</English>
+        </Key>
+    </Package>
 </Project>

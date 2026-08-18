@@ -41,5 +41,11 @@ class CfgFunctions {
 
             class returnItemToSlot {};
         };
+
+        class modules {
+            file = PATH_TO_FUNC_SUB(modules);
+            
+            class aiCigs_module {};
+        };
     };
 };
