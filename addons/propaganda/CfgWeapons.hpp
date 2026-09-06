@@ -1,3 +1,6 @@
+#define CVO_SOUNDS sounds[] = { Q(cvo_raven_caw) }
+
+
 class CfgWeapons {
 
     class CBA_MiscItem_ItemInfo;
@@ -14,6 +17,7 @@ class CfgWeapons {
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
         };
+        CVO_SOUNDS;
     };
     class CVO_SpraypaintWhite: ACE_SpraypaintWhite {
         author = "Zorn";
@@ -23,6 +27,7 @@ class CfgWeapons {
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
         };
+        CVO_SOUNDS;
     };
     class CVO_SpraypaintRed: ACE_SpraypaintRed {
         author = "Zorn";
@@ -32,5 +37,6 @@ class CfgWeapons {
         class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 1;
         };
+        CVO_SOUNDS;
     };
 };
